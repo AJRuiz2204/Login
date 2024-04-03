@@ -4,10 +4,25 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    /* width: 768px; */
     max-width: 100%;
-    min-height: 480px;
+    min-height: 900px; 
+    display: flex;
 }
+
+i {
+    border: 1px #333 solid;
+    margin: 1px;
+    padding: .5rem;
+    width: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+i:hover {
+    color: #512da8;
+    border:  1px #512da8 solid;
+}
+
 
 .container p{
     font-size: 14px;
@@ -28,7 +43,7 @@
 }
 
 .container button{
-    background-color: #28baab;
+    background-color: #512da8;
     color: #fff;
     font-size: 12px;
     padding: 10px 45px;
@@ -39,6 +54,16 @@
     text-transform: uppercase;
     margin-top: 10px;
     cursor: pointer;
+}
+
+.titulo-banco {
+    background-image: linear-gradient(to right, rgb(8, 8, 8) 60%, rgb(248, 248, 250) 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.container button:hover {
+    background-color: #7e59d4;
 }
 
 .container button.hidden{
@@ -144,7 +169,7 @@
 .toggle{
     background-color: #512da8;
     height: 100%;
-    background: linear-gradient(to right, #2437a3, #26af3d);
+    background: linear-gradient(to right, #69499B, #763dd1);
     color: #fff;
     position: relative;
     left: -100%;
@@ -188,4 +213,4 @@
 
 .container.active .toggle-right{
     transform: translateX(200%);
-}
+} 

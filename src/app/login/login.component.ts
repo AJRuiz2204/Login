@@ -13,7 +13,7 @@ import { Component, ElementRef, VERSION, ViewChild } from '@angular/core';
 export class LoginComponent {
   isActive: boolean = false;
 
-  IsActive(){
+  togglePanel(){
     this.isActive=!this.isActive;
   }
 
